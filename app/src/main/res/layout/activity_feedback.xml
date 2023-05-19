@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    android:orientation="vertical"
+    tools:context=".Activities.FeedbackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/background_file"
+        android:fontFamily="@font/keepcalm_medium"
+        android:gravity="center"
+        android:text="Feedback"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/_preReviewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="15"
+        app:shimmer_demo_grid_child_count="2"
+        android:layout_margin="12dp"
+        app:shimmer_demo_layout="@layout/feedback_loading_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        tools:listitem="@layout/feedback_items" />
+
+    <TextView
+        android:id="@+id/noReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="No Feedback\nYet"
+        android:textColor="@color/myFav"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

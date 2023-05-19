@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.NotificationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/background_file"
+        android:fontFamily="@font/keepcalm_medium"
+        android:gravity="center"
+        android:text="Notifications"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/_preNotifyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="15"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/message_loading_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/_notifyAdView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8385601672345207/8387801493"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         />
+
+</LinearLayout>

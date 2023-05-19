@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154706094057",
+    "project_id": "services-hub-7d81d",
+    "storage_bucket": "services-hub-7d81d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154706094057:android:fb63c7061ce7c49e5b0d78",
+        "android_client_info": {
+          "package_name": "com.devtwist.serviceshub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154706094057-utisk87ms74niskb65rn3q5ivi2cr1l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7Pu9O6VUP5gwNUEpdGRAdHt6tCGAZMGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154706094057-utisk87ms74niskb65rn3q5ivi2cr1l3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
